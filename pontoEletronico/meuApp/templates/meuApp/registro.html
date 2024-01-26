@@ -1,0 +1,15 @@
+<!-- templates/registro.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registro de Usuário</title>
+</head>
+<body>
+    <form method="post">
+        {% csrf_token %}
+        Nome: <input type="text" name="nome"><br>
+        ID: <input type="text" name="user_id"><br>
+        <input type="submit" value="Registrar">
+    </form>
+</body>
+</html>
